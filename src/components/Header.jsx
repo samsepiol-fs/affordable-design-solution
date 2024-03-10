@@ -49,7 +49,7 @@ const Header = () => {
             </nav>
             {pathname.pathname === "/"
                 ?<Button className='hidden lg:flex' href="#enquiry">make an enquiry</Button>
-                :<Link to="/enquiry">
+                :<Link to="/enquiry" className='hidden lg:flex'>
                     <Button> make an enquiry </Button>
                 </Link>
             }
