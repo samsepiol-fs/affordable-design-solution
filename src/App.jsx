@@ -8,7 +8,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import IndustrialProductDesign from './pages/IndustrialProductDesign';
 import SocialMediaManagement from './pages/SocialMediaManagement';
-import WebDvelopment from './pages/WebDevelopment';
+import WebDevelopment from './pages/WebDevelopment';
 import AppDevelopment from './pages/AppDevelopment';
 import Enquiry from './components/Enquiry';
 import Footer from './components/Footer';
@@ -28,7 +28,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/graphic-design" element={<GraphicDesign />} />
           <Route path="/industrial-product-design" element={<IndustrialProductDesign />} />
-          <Route path="/web-development" element={<WebDvelopment/>} />
+          <Route path="/web-development" element={<WebDevelopment/>} />
           <Route path="/app-development" element={<AppDevelopment/>} />
           <Route path="/social-media-management" element={<SocialMediaManagement />} />
           <Route path="/*" element={<Navigate to="/" />} />
