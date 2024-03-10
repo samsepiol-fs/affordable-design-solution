@@ -47,9 +47,12 @@ const Header = () => {
                 </div>
                 <HamburgerMenu />
             </nav>
-            <Button className='hidden lg:flex' href={`${pathname.pathname==='/'? "#enquiry" :"/enquiry"}`}>
-                make an enquiry
-            </Button>
+            {pathname.pathname === "/"
+                ?<Button className='hidden lg:flex' href="#enquiry">make an enquiry</Button>
+                :<Link to="/enquiry">
+                    <Button> make an enquiry </Button>
+                </Link>
+            }
             <Button 
                 className='ml-auto lg:hidden'  
                 px='px-3'
