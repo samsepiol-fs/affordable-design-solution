@@ -12,7 +12,7 @@ import WebDevelopment from './pages/WebDevelopment';
 import AppDevelopment from './pages/AppDevelopment';
 import Enquiry from './components/Enquiry';
 import Footer from './components/Footer';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
 
@@ -34,6 +34,7 @@ function App() {
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
+        <SpeedInsights />
       </div>
       <ButtonGradient />
     </Router>
