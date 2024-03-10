@@ -2,6 +2,7 @@ import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
 import { affordableDesignLogo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,45 +27,45 @@ const Footer = () => {
           <h6 className="h6 text-n-2"> Quick Links </h6>
           <ul className="flex flex-col text-n-4 mb-2 gap-2 ">
             <li className="hover:text-color-1">
-              <a href="/"> Home </a>
+              <Link to="/"> Home </Link>
             </li>
             <li className="relative group">
-              <a href="/services" className=" hover:text-color-1">
+              <Link to="/services" className=" hover:text-color-1">
                 {" "}
                 Services{" "}
-              </a>
+              </Link>
               <div className="hidden absolute group-hover:inline-block bg-n-6 rounded-xl mt-1 min-w-max">
-                <a
-                  href="/graphic-design"
+                <Link
+                  to="/graphic-design"
                   className="block px-4 py-2 text-sm text-n-3 hover:text-color-1 "
                 >
                   Graphic Design
-                </a>
-                <a
-                  href="/industrial-product-design"
+                </Link>
+                <Link
+                  to="/industrial-product-design"
                   className="block px-4 py-2 text-sm text-n-3 hover:text-color-1 "
                 >
                   Industrial product Design
-                </a>
-                <a
-                  href="/web-development"
+                </Link>
+                <Link
+                  to="/web-development"
                   className="block px-4 py-2 text-sm text-n-3 hover:text-color-1 "
                 >
                   Web Development
-                </a>
-                <a
-                  href="/social-media-management"
+                </Link>
+                <Link
+                  to="/social-media-management"
                   className="block px-4 py-2 text-sm text-n-3 hover:text-color-1 "
                 >
                   Social Media Management
-                </a>
+                </Link>
               </div>
             </li>
             <li className="hover:text-color-1">
-              <a href="/about-us"> About Us</a>
+              <Link to="/about-us"> About Us</Link>
             </li>
             <li className="hover:text-color-1">
-              <a href="/contact-us"> Contact Us</a>
+              <Link to="/contact-us"> Contact Us</Link>
             </li>
           </ul>
         </div>
