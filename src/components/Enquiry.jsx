@@ -43,7 +43,9 @@ const Enquiry = () => {
                         </li>
                     ))}
                 </ul>
-                <Button href="/about-us"> Learn more about us </Button>
+                <Link to="/about-us">
+                    <Button> Learn more about us </Button>
+                </Link>
             </div>
             <div className="lg:ml-auto xl:w-[38rem] mt-4" >
                 <p className='body-2 mb-4 text-n-4 md:mb-16 lg:mb-32 lg:w-[22rem] lg:mx-auto'>
