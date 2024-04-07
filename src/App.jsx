@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import ButtonGradient from './assets/svg/ButtonGradient';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -9,13 +9,12 @@ import ContactUs from './pages/ContactUs';
 import IndustrialProductDesign from './pages/IndustrialProductDesign';
 import SocialMediaManagement from './pages/SocialMediaManagement';
 import WebDevelopment from './pages/WebDevelopment';
-import AppDevelopment from './pages/AppDevelopment';
 import Enquiry from './components/Enquiry';
 import Footer from './components/Footer';
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
-
+  
   return (
     <Router>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
@@ -29,7 +28,6 @@ function App() {
           <Route path="/graphic-design" element={<GraphicDesign />} />
           <Route path="/industrial-product-design" element={<IndustrialProductDesign />} />
           <Route path="/web-development" element={<WebDevelopment/>} />
-          <Route path="/app-development" element={<AppDevelopment/>} />
           <Route path="/social-media-management" element={<SocialMediaManagement />} />
           <Route path="/*" element={<Navigate to="/" />} />
         </Routes>

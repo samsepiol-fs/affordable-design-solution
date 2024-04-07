@@ -54,7 +54,7 @@ const Footer = () => {
                   Web Development
                 </Link>
                 <Link
-                  to="/social-media-management"
+                  to="/contact-us"
                   className="block px-4 py-2 text-sm text-n-3 hover:text-color-1 "
                 >
                   Social Media Management
@@ -83,7 +83,7 @@ const Footer = () => {
           <div className="mt-0">
             <p className="text-n-4 underline mb-1"> Phone: </p>
             <a
-              href="tel:+914037996285"
+              href="tel:+917037996285"
               className="text-sm font-bold text-n-3 hover:text-color-1"
             >
               +917037996285

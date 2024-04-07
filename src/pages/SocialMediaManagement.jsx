@@ -6,7 +6,14 @@
 // import { PhotoChatMessage, VideoBar, VideoChatMessage } from '../components/design/Services'
 // import { Gradient } from '../components/design/Hero'
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const SocialMediaManagement = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
   // return (
   //   <Section>
   //     <div className="container">

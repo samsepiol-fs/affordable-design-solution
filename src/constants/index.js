@@ -69,6 +69,40 @@ import {
     "Consultation and Brand Strategy",
   ];
   
+  export const webServices = [
+    {
+      id: 0,
+      title: "Website Design",
+      text:"Crafting visually appealing layouts and user-friendly interfaces that create a strong first impression and keep visitors engaged."
+    },
+    {
+      id: 1,
+      title: "Front-End Development",
+      text:"Building the interactive elements of a website that users see and interact with directly, such as buttons, forms, and animations."
+    },
+    {
+      id: 2,
+      title: "Back-End Development",
+      text:"Creating the behind-the-scenes magic that powers your website, including server setup, databases, and handling user data."
+    },
+    {
+      id: 3,
+      title: "UI/UX Design",
+      text:"Building the interactive elements of a website that users see and interact with directly, such as buttons, forms, and animations."
+    },
+    {
+      id: 4,
+      title: "SEO (Search Engine Optimisation)",
+      text:"SEO, or Search Engine Optimization, is a vital strategy for improving website visibility and ranking on search engine result pages, driving organic traffic and enhancing online presence."
+    },
+    {
+      id: 5,
+      title: "App Development",
+      text:"Our team of skilled developers leverages the latest technologies and frameworks to ensure your app is built using the most efficient and effective tools available."
+    },
+    
+  ];
+  
   
   export const services = [
     {
@@ -97,7 +131,7 @@ import {
       id: "3",
       title: "Social Media Management",
       text: "High-Res thumbnails, Launch and optimize content, Serve as community moderators, Build relationships with viewers, Start with a content plan (before you launch your channel), Cross-promote your YouTube content, etc.",
-      href: "/social-media-management",
+      href: "/contact-us",
       imageUrl: roadmap4,
     },
   ];

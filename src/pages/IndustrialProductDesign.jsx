@@ -6,8 +6,14 @@ import InfoCards from "../components/InfoCards";
 import Button from '../components/Button'
 import Section from '../components/Section'
 import { industrialProductDesdignServices } from '../constants'
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const IndustrialProductDesign = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
   return (
     <Section>
       <div className="container">

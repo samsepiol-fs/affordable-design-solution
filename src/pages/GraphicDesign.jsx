@@ -3,12 +3,18 @@ import Section from '../components/Section'
 import Heading from '../components/Heading'
 import { check, service1, service2, service3 } from '../assets'
 import { graphicDesignServices, graphicServices } from '../constants'
-import { PhotoChatMessage, VideoBar, VideoChatMessage } from '../components/design/Services'
+import {  VideoBar, VideoChatMessage } from '../components/design/Services'
 import { Gradient } from '../components/design/Hero'
 import InfoCards from "../components/InfoCards";
 import Button from '../components/Button'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const GraphicDesign = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
   return (
     <Section>
       <div className="container">
@@ -88,7 +94,7 @@ const GraphicDesign = () => {
                 </p>
               </div>
 
-              <PhotoChatMessage/>
+              
              </div>
              <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">

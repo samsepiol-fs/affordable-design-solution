@@ -38,6 +38,7 @@ import stars from "./pricing/stars.svg";
 
 import done from "./roadmap/done.svg";
 import hero from "./roadmap/hero.png";
+
 import roadmap1 from "./roadmap/image-1.png";
 import roadmap2 from "./roadmap/image-2.png";
 import roadmap3 from "./roadmap/image-3.png";

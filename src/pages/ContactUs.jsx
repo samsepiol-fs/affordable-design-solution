@@ -1,11 +1,16 @@
-import React from 'react'
+import { useEffect } from 'react'
 import Section from '../components/Section'
 import { smallSphere, stars } from '../assets'
 import Heading from '../components/Heading'
 import Cards from '../components/Cards'
 import { LeftLine, RightLine} from '../components/design/Pricing';
 import Form from '../components/Form'
+import { useLocation } from 'react-router-dom'
 const ContactUs = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
   return (
     <Section className="overflow-hidden">
       <div className="container relative z-2">

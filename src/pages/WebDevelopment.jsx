@@ -1,55 +1,57 @@
-import { grid } from '../assets';
-import Heading from '../components/Heading';
-import InfoCards from '../components/InfoCards';
-import Section from '../components/Section';
-import { developmentServices, services } from '../constants';
+import { hero } from "../assets";
+import Heading from "../components/Heading";
+import InfoCards from "../components/InfoCards";
+import Section from "../components/Section";
+import Button from "../components/Button";
+import { developmentServices,  webServices } from "../constants";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Gradient } from "../components/design/Services";
+
+import ServiceCards from "../components/ServiceCards";
 
 const WebDevelopment = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
-    <Section className="overflow-hidden ">
-      <div className="container md:pb-10">
-        <Heading 
-          tag= "Elevate your online presence with Affordable Design Solutions, the leading website development experts in Dehradun. Discover exceptional designs and functionality that make your website stand out. Partner with us now for standout web solutions"
-          title="We are the Best Website Development Experts in Dehradun."
+    <Section>
+      <div className="container">
+        <Heading
+          text="Elevate your online presence with Affordable Design Solutions, the leading website development experts in Dehradun. Discover exceptional designs and functionality that make your website stand out. Partner with us now for standout web solutions"
+          title="We are the Best Web/App Development Experts in Dehradun."
         />
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-          {services.map((item) => {
-            const status = item.status === "done"? "Done" : "In Progress";
+        <div className="flex justify-center mb-5">
+          <Button href="#info" white>
+            Read More
+          </Button>
+        </div>
 
-            return (
-              <div key={item.id} className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${item.colorful? 'bg-conic-gradient':'bg-n-6'}`}>
-                <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                  <div className="absolute top-0 left-0 max-w-full">
-                    <img src={grid} 
-                      alt="grid" 
-                      className='w-full'
-                      width={550}
-                      height={550}
-                    />
-                  </div>
-                  <div className="relative z-1 ">
-                      
-                      <div className="mb-10 -my-10 -mx-15">
-                        <img 
-                          src={item.imageUrl} 
-                          alt={item.title}
-                          className='w-full'
-                          width={630}
-                          height={420}
-                        />
-                      </div>
-                      <h4 className='h4 mb-4'> {item.title} </h4>
-                      <p className='body-2 text-n-4'> {item.text} </p>
-                    </div>
-                </div>
-              </div>
-            )
-          })}
+        <div
+          className="relative z-1 flex items-center
+            h-[39rem] mb-5 p-8 rounded-3xl
+            overflow-hidden lg:p-20 xl:h-[46rem] "
+        >
+          <div
+            className=" mx-auto absolute w-full h-full  pointer-events-none md:w-auto
+              xl:w-auto mb-20 mt-20"
+          >
+            <img
+              src={hero}
+              alt="service1"
+              className="w-full h-full object-cover "
+              width={800}
+              height={730}
+            />
+          </div>
+          <Gradient />
         </div>
       </div>
+      <ServiceCards data={webServices} />
       <InfoCards data={developmentServices} />
     </Section>
-  )
-}
+  );
+};
 
 export default WebDevelopment;

@@ -3,10 +3,15 @@ import Heading from '../components/Heading';
 import Section from '../components/Section';
 import { services } from '../constants';
 import Arrow from "../assets/svg/Arrow";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Gradient } from "./design/Roadmap";
+import { useEffect } from 'react';
 
 const Services = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
   return (
     <Section id="services" className="overflow-hidden ">
       <div className="container md:pb-10">
